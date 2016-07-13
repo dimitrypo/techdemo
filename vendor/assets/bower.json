@@ -1,0 +1,10 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "bootstrap": "latest",
+    "jquery-easing": "latest",
+    "scrollreveal": "latest",
+    "magnific-popup": "latest",
+    "font-awesome": "latest"
+  }
+}
