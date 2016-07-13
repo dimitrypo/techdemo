@@ -1,17 +1,19 @@
 %header
   .header-content
     .header-content-inner
-      %h1#homeHeading Your Favorite Source of Free Bootstrap Themes
+      %h1#homeHeading Technical demo and portfolio.
       %hr/
-      %p Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
+      %p Here you can find demonstration of my abilities and skillset, as well as some other helpful materials.
       %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
 %section#about.bg-primary
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading We've got what you need!
+        %h2.section-heading What is the reason of this page?
         %hr.light/
-        %p.text-faded Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
+        %p I've been asked multiple times to show sources of the code I've been working on. Unfortunately, with exception of some small projects, I cannot do that, because of signed NDA and all other reasons like illegality of sharing proprietary code and potentially endangering live projects. 
+        %p.text-faded To address that I've created this page where I can show examples what I can do without any undesirable consequences.
+        %p.text-faded Also here you can find client's review of my past work and my portfolio.
         %a.page-scroll.btn.btn-default.btn-xl.sr-button{:href => "#services"} Get Started!
 %section#services
   .container
@@ -21,99 +23,83 @@
         %hr.primary/
   .container
     .row
-      .col-lg-3.col-md-6.text-center
+      .col-lg-2.col-md-3.text-center
         .service-box
           %i.fa.fa-4x.fa-diamond.text-primary.sr-icons
-          %h3 Sturdy Templates
-          %p.text-muted Our templates are updated regularly so they don't break.
-      .col-lg-3.col-md-6.text-center
+          %h3 Ruby On Rails
+          %p.text-muted I've mastered RoR development investing more than 6000 hours in it, working with dozens different gems
+      .col-lg-2.col-md-3.text-center
         .service-box
           %i.fa.fa-4x.fa-paper-plane.text-primary.sr-icons
-          %h3 Ready to Ship
-          %p.text-muted You can use this theme as is, or you can make changes!
-      .col-lg-3.col-md-6.text-center
+          %h3 FullStack + DevOps
+          %p.text-muted I can handle your project from server setup to fine tuning of frontend
+      .col-lg-2.col-md-3.text-center
         .service-box
-          %i.fa.fa-4x.fa-newspaper-o.text-primary.sr-icons
-          %h3 Up to Date
-          %p.text-muted We update dependencies to keep things fresh.
-      .col-lg-3.col-md-6.text-center
+          %i.fa.fa-4x.fa-database.text-primary.sr-icons
+          %h3 Database Ninja
+          %p.text-muted I can architect, manage, optimize DB running thousands queries per minute with dozens of millions rows
+      .col-lg-2.col-md-3.text-center
         .service-box
-          %i.fa.fa-4x.fa-heart.text-primary.sr-icons
-          %h3 Made with Love
-          %p.text-muted You have to make your websites with love these days!
+          %i.fa.fa-4x.fa-code.text-primary.sr-icons
+          %h3 Design expert
+          %p.text-muted I've worked more than 3000 hours on fronend only, completing the most sophisticated design using CSS3, HTMl5, Bootstrap and dozens other tools
+      .col-lg-2.col-md-3.text-center
+        .service-box
+          %i.fa.fa-4x.fa-cogs.text-primary.sr-icons
+          %h3 API master
+          %p.text-muted Integrated more then 20 and created more than 3, including social network, payments, mapping etc.       
+      .col-lg-2.col-md-3.text-center
+        .service-box
+          %i.fa.fa-4x.fa-user-secret.text-primary.sr-icons
+          %h3 Security in mind
+          %p.text-muted I can secure your server and app, prevent hacking, block DDOS
+        
 %section#portfolio.no-padding
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading Examples
+        %hr.primary/
+        %br
   .container-fluid
     .row.no-gutter.popup-gallery
-      .col-lg-4.col-sm-6
+      .col-lg-6.col-sm-6
         %a.portfolio-box{:href => "img/portfolio/fullsize/1.jpg"}
           = image_tag("portfolio/thumbnails/1.jpg")
           .portfolio-box-caption
             .portfolio-box-caption-content
               .project-category.text-faded
-                Category
+                Rails + Angular
               .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "img/portfolio/fullsize/2.jpg"}
-          =image_tag "portfolio/thumbnails/2.jpg"
+                Chat app
+      .col-lg-6.col-sm-6
+        %a.portfolio-box{:href => "javascript:void(0)"}
+          =image_tag "work_in_progress.png"
           .portfolio-box-caption
             .portfolio-box-caption-content
               .project-category.text-faded
                 Category
               .project-name
                 Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "img/portfolio/fullsize/3.jpg"}
-          =image_tag "portfolio/thumbnails/3.jpg"
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "img/portfolio/fullsize/4.jpg"}
-          =image_tag "portfolio/thumbnails/4.jpg"
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "img/portfolio/fullsize/5.jpg"}
-          =image_tag "portfolio/thumbnails/5.jpg"
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "img/portfolio/fullsize/6.jpg"}
-          =image_tag "portfolio/thumbnails/6.jpg"
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-%aside.bg-dark
-  .container.text-center
-    .call-to-action
-      %h2 Free Download at Start Bootstrap!
-      %a.btn.btn-default.btn-xl.sr-button{:href => "http://startbootstrap.com/template-overviews/creative/"} Download Now!
+
+      
+-# will be done later
+  %aside.bg-dark
+    .container.text-center
+      .call-to-action
+        %h2 Free Download at Start Bootstrap!
+        %a.btn.btn-default.btn-xl.sr-button{:href => "http://startbootstrap.com/template-overviews/creative/"} Download Now!
 %section#contact
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center
         %h2.section-heading Let's Get In Touch!
         %hr.primary/
-        %p Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
+        %p Ready to start your next project with me? That's great! Give me a call or send me an email and I'll get back to you as soon as possible!
       .col-lg-4.col-lg-offset-2.text-center
-        %i.fa.fa-phone.fa-3x.sr-contact
-        %p 123-456-6789
+        %i.fa.fa-skype.fa-3x.sr-contact
+        %p contact.dimitry
       .col-lg-4.text-center
         %i.fa.fa-envelope-o.fa-3x.sr-contact
         %p
-          %a{:href => "mailto:your-email@your-domain.com"} feedback@startbootstrap.com
+          %a{:href => "mailto:handsomejackmi@gmail.com"} handsomejackmi@gmail.com

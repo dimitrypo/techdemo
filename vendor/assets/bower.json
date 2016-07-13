@@ -5,6 +5,7 @@
     "jquery-easing": "latest",
     "scrollreveal": "latest",
     "magnific-popup": "latest",
-    "font-awesome": "latest"
+    "font-awesome": "latest",
+    "scrollspy": "latest"
   }
 }

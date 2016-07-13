@@ -414,3 +414,9 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+.popup-gallery{
+  > div{ //porfolio items
+    overflow: hidden;
+  }
+}
