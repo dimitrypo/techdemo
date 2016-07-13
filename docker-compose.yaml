@@ -1,0 +1,25 @@
+#to update techdemo image:
+#rm -rf log/* && sudo docker build --tag=dimitrydimitry/techdemo . && sudo docker push dimitrydimitry/techdemo
+#docker pull dimitrydimitry/techdemo
+
+techdemo:
+  container_name: techdemo
+  #build: .
+  image: "dimitrydimitry/techdemo"
+  expose:
+    - "3000"
+  ports:
+    - "3002:3000"
+  environment:
+    - "PORT=3000"
+    - "RAILS_ENV=development"
+    - "TERM=xterm"
+  volumes:
+    - .:/techdemo/    
+  command:
+    "bash -c -l 'service postgresql start &&
+                 sleep 2 &&
+                 bundle install &&
+                 rake db:migrate &&
+                 rails s -b 0.0.0.0'"
+  mem_limit: 4000m
