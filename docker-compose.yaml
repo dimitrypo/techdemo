@@ -21,5 +21,6 @@ techdemo:
                  sleep 2 &&
                  bundle install &&
                  rake db:migrate &&
+                 rm /techdemo/tmp/pids/server.pid &&
                  rails s -b 0.0.0.0'"
   mem_limit: 4000m
