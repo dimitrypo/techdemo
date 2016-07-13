@@ -13,9 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require bootstrap/dist/js/bootstrap.min
 //= require jquery/dist/jquery.min
 //= require jquery-easing/jquery.easing.min
 //= require scrollreveal/dist/scrollreveal.min
 //= require magnific-popup/dist/jquery.magnific-popup.min.js
+//= require_tree .

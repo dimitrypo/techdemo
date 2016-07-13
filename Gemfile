@@ -7,6 +7,10 @@ gem 'rails', '~> 5.0.0'
 #Use bower to manage JS/CSS dependencies
 gem "bower-rails", "~> 0.10.0"
 
+
+#To modify bootstrap's variables
+gem 'less-rails'
+
 #Using Postgres as DB
 gem 'pg'
 # Use Puma as the app server
