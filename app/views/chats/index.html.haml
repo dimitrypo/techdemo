@@ -40,7 +40,7 @@
                         %strong.primary-font {{message.user_name}}
                         %small.pull-right.text-muted
                           %span.glyphicon.glyphicon-time>
-                          {{message.created_at}}
+                          {{message.created_at | date:'yyyy-MM-dd HH:mm:ss Z'}}
                       %p
                         {{message.message}}
               .panel-footer
