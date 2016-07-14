@@ -14,5 +14,7 @@ module Techdemo
 
     # Loading bower installed stuff
     config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
+
+    config.assets.precompile += %w( chat.js )
   end
 end
