@@ -1,0 +1,58 @@
+%header.short-header
+  .header-content
+    .header-content-inner
+      %h1#homeHeading Chat app
+      %hr/
+      %p Simple chat app, showing how Angular might be quickly integrated into Ruby On Rails to make some pages 
+      %a.btn.btn-primary.btn-xl.page-scroll{:href => "#chat"} Check it out
+
+%a{:id => "chat"}
+%section#services
+  .container
+    .row
+      .col-lg-12
+        %h2.section-heading Technologies used          
+        %p
+          Here you can see a simple chat application that's done using:
+          %ul
+            %li
+              Ruby On Rails 5
+            %li
+              AngularJS
+          \... more on the way...
+    .row
+      .col-lg-12
+        %h2 App itself: 
+        %br
+        %div{:'ng-app' => "simple-chat", :'ng-controller' => "ChatCtrl"}
+          .col-md-5
+            .panel.panel-primary
+              .panel-heading
+                %span.glyphicon.glyphicon-comment
+                Chat
+              .panel-body
+                %ul.chat
+                  %li.left.clearfix{:"ng-repeat" => "message in messages | reverse"}
+                    %span.chat-img.pull-left
+                      %img.img-circle{:alt => "User Avatar", :src => "http://placehold.it/50/55C1E7/fff&text=U"}/
+                    .chat-body.clearfix
+                      .header
+                        %strong.primary-font {{message.user_name}}
+                        %small.pull-right.text-muted
+                          %span.glyphicon.glyphicon-time>
+                          {{message.created_at}}
+                      %p
+                        {{message.message}}
+              .panel-footer
+                .input-group.user_name
+                  %input.form-control.input-sm{:type => "text", :placeholder => "Your Username", :"ng-model" => "user_name"}
+                .input-group
+                  %input#btn-input.form-control.input-sm{:placeholder => "Type your message here...", :type => "text", :"ng-model" => "messagetext"}/
+                  %span.input-group-btn
+                    %button#btn-chat.btn.btn-warning.btn-sm{:"ng-click" => "AddMessage()"}
+                      Send
+%aside.bg-dark
+  .container.text-center
+    .call-to-action
+      %a.btn.btn-default.btn-xl.sr-button{:href => "/"} Go back to Home page
+= javascript_include_tag 'chat'

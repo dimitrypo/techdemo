@@ -1,9 +1,8 @@
-class CreateChatMessages < ActiveRecord::Migration[5.0]
+class CreateChats < ActiveRecord::Migration[5.0]
   def change
-    create_table :chat_messages do |t|
+    create_table :chats do |t|
       t.string :user_name
       t.text :message
-
       t.timestamps
     end
   end

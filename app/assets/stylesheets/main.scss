@@ -146,6 +146,11 @@ aside {
     color: #F05F40;
   }
 }
+header.short-header {
+  min-height: 451px;
+  background-image: image-url('header_small.jpg');
+}
+
 header {
   position: relative;
   width: 100%;

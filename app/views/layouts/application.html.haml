@@ -33,16 +33,16 @@
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li
-              %a.page-scroll{:href => "#page-top"} About
+              %a.page-scroll{:href => "/#page-top"} About
             %li
-              %a.page-scroll{:href => "#services"} Skillset
+              %a.page-scroll{:href => "/#services"} Skillset
             %li
-              %a.page-scroll{:href => "#portfolio"} Examples of work
+              %a.page-scroll{:href => "/#portfolio"} Examples of work
             %li
-              %a.page-scroll{:href => "#contact"} Contact
+              %a.page-scroll{:href => "/#contact"} Contact
         / /.navbar-collapse
       / /.container-fluid
     = yield
     / Loadin JS at the end to not make browser freeze with page not being rendered during downloading 
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application'
 

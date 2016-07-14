@@ -6,6 +6,7 @@
     "scrollreveal": "latest",
     "magnific-popup": "latest",
     "font-awesome": "latest",
-    "scrollspy": "latest"
+    "scrollspy": "latest",
+    "angular": "latest"
   }
 }

@@ -12,9 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require scrollreveal/dist/scrollreveal.min
 //= require bootstrap/dist/js/bootstrap.min
 //= require jquery-easing/jquery.easing.min
 //= require magnific-popup/dist/jquery.magnific-popup.min
-//= require_tree .
+//= require cable
+//= require main

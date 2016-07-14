@@ -7,3 +7,5 @@ asset 'scrollreveal'
 asset 'magnific-popup'
 asset 'font-awesome'
 asset 'scrollspy'
+
+asset 'angular'
