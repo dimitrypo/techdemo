@@ -3,16 +3,20 @@ FROM ubuntu:16.04
 
 RUN "sh" "-c" "echo nameserver 8.8.8.8 > /etc/resolv.conf"
 
+RUN apt-get update --fix-missing
+
+RUN apt-get install -y curl mysql-client mysql-server git wget p7zip-full libmysqlclient-dev libmysqlclient-dev nodejs mc screen locales
+
 RUN export LANG=en_US.UTF-8
 RUN export LANGUAGE=en_US.UTF-8
 RUN export LC_ALL=en_US.UTF-8
 RUN dpkg-reconfigure locales
 
-RUN apt-get update --fix-missing
+
 RUN echo "mysql-server mysql-server/root_password password railsrails" | debconf-set-selections
 RUN echo "mysql-server mysql-server/root_password_again password railsrails" | debconf-set-selections
 
-RUN apt-get install -y curl mysql-client mysql-server git wget p7zip-full libmysqlclient-dev libmysqlclient-dev nodejs mc screen
+
 
 RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 

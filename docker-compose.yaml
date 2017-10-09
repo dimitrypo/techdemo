@@ -4,8 +4,8 @@
 
 techdemo:
   container_name: techdemo
-  #build: .
-  image: "dimitrydimitry/techdemo"
+  build: .
+  #image: "dimitrydimitry/techdemo"
   expose:
     - "3000"
   ports:
