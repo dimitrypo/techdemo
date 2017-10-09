@@ -7,8 +7,8 @@ gem 'rails', '~> 5.0.0'
 #Use bower to manage JS/CSS dependencies
 gem "bower-rails", "~> 0.10.0"
 
-#Using Postgres as DB
-gem 'pg'
+#Using Mysql as DB
+gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -49,4 +49,4 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data'#, platforms: [:mingw, :mswin, :x64_mingw, :jruby]

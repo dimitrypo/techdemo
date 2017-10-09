@@ -17,10 +17,10 @@ techdemo:
   volumes:
     - .:/techdemo/    
   command:
-    "bash -c -l 'service postgresql start &&
-                 sleep 2 &&
+    "bash -c -l 'service mysql start &&
                  bundle install &&
+                 rake db:create &&
                  rake db:migrate &&
-                 rm /techdemo/tmp/pids/server.pid &&
+                 rm -rf /techdemo/tmp/* &&
                  rails s -b 0.0.0.0'"
   mem_limit: 4000m
