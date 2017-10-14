@@ -9,7 +9,8 @@ RUN echo "mysql-server-5.7 mysql-server/root_password password railsrails" | deb
 
 RUN echo "mysql-server-5.7 mysql-server/root_password_again password railsrails" | debconf-set-selections
 
-RUN apt-get install -y curl mysql-client mysql-server git wget p7zip-full libmysqlclient-dev libmysqlclient-dev nodejs mc screen locales
+RUN apt-get install -y curl mysql-client mysql-server git wget p7zip-full libmysqlclient-dev libmysqlclient-dev nodejs mc screen locales sudo libgmp3-dev postgresql postgresql-contrib libpq-dev
+
 
 RUN export LANG=en_US.UTF-8
 RUN export LANGUAGE=en_US.UTF-8
