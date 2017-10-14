@@ -7,8 +7,7 @@ gem 'rails', '~> 5.0.0'
 #Use bower to manage JS/CSS dependencies
 gem "bower-rails", "~> 0.10.0"
 
-#Using Mysql as DB
-gem 'mysql2'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -33,6 +32,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :production do
+  #Using PG in production (heroku)
+  gem 'pg'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -40,6 +44,8 @@ end
 gem "haml-rails", "~> 0.9"
 
 group :development do
+  #Using Mysql as DB in development
+  gem 'mysql2'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
