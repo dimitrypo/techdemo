@@ -1,0 +1,104 @@
+%header.short-header
+  .header-content
+    .header-content-inner
+      %h1#homeHeading www.jualo.com
+      %hr/
+      %p 
+        Sophysticated marketplace built to serve dozens of millions customers. Enormous scale!
+        Role there - first developer, created whole project from ground level up, including server setup, backend, frontend
+      %a.btn.btn-primary.btn-xl.page-scroll{:href => "https://www.jualo.com", target: "_blank"} Check it out
+%section.jualo
+  .container
+    .row
+      .col-lg-12
+        %h2.section-heading Technologies used          
+        %p
+          Here are major technologies that I've used while making this project:
+          %ul
+            %li
+              Ruby On Rails 4.2 (migrated from Rails 3 - app released month before Rails 4 went stable)
+            %li
+              HTML5, CSS3, Responsive, Twitter Boostrsap based, pixel perfect design
+            %li
+              Mobile version, including compatible with Opera Mini              
+            %li
+              AngularJS
+            %li
+              MySQL running in replication              
+            %li
+              Apache SOLR for full text search
+            %li
+              Redis and Sidekiq 
+            %li
+              Cloud hosting, AWS integration
+            %li
+              Docker, docker-compose 
+            %li
+              Redis and Sidekiq       
+            %li
+              HAproxy, Nginx
+            %li
+              Redis and Sidekiq  
+            %li
+              Facebook and Google API integration
+            %li
+              IP Geo location, Google Maps Api integration
+            %li
+              Redis and Sidekiq        
+            %li
+              Rspec, Minitest, Copybara, FactoryGirl for tests
+            %li
+              Redis and Sidekiq       
+            %li
+              Custom Bash scripts for backup, auto-recovery, and auto-service jobs
+            %li
+              Advanced and unique caching mechanisms which helps to avoid bottlenecks
+
+    .row
+      .col-lg-12
+        %h2 Screenshots: 
+        %section
+          .container-fluid
+            .row
+              .col-lg-6.col-sm-6
+                = link_to jualo_path, class: "portfolio-box" do
+                  = image_tag("portfolio/thumbnails/jualo/1.jpg")
+                  .portfolio-box-caption
+                    .portfolio-box-caption-content
+                      .project-category.text-faded
+                        Complex pixel perfect design
+                      .project-name
+                        
+              .col-lg-6.col-sm-6
+                = link_to jualo_path, class: "portfolio-box" do
+                  = image_tag("portfolio/thumbnails/jualo/2.jpg")
+                  .portfolio-box-caption
+                    .portfolio-box-caption-content
+                      .project-category.text-faded
+                        Multiple API integrations
+                      .project-name
+                        Facebook used to post on users timelines. Google maps api integrated into geosearch
+            .row.padding-top             
+              .col-lg-6.col-sm-6
+                = link_to jualo_path, class: "portfolio-box" do
+                  = image_tag("portfolio/thumbnails/jualo/3.jpg")
+                  .portfolio-box-caption
+                    .portfolio-box-caption-content
+                      .project-category.text-faded
+                        Function reach
+                      .project-name
+                        Bidding, messaging, feedback, chat - everytihng what you expect from modern marketplace
+              .col-lg-6.col-sm-6
+                = link_to jualo_path, class: "portfolio-box" do
+                  = image_tag("portfolio/thumbnails/jualo/4.jpg")
+                  .portfolio-box-caption
+                    .portfolio-box-caption-content
+                      .project-category.text-faded
+                        Handling more than 1,000,000 records
+                      .project-name
+                        Instantanios faceted search, including geolocation (show closest)
+%aside.bg-dark
+  .container.text-center
+    .call-to-action
+      %a.btn.btn-default.btn-xl.sr-button{:href => "/"} Go back to Home page
+= javascript_include_tag 'chat'

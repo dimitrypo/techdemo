@@ -42,19 +42,19 @@
         .service-box
           %i.fa.fa-4x.fa-code.text-primary.sr-icons
           %h3 Design expert
-          %p.text-muted I've worked more than 3000 hours on fronend only, completing the most sophisticated design using CSS3, HTMl5, Bootstrap and dozens other tools
+          %p.text-muted Pixel Perfect! Worked > 3000 hours on fronend only, completing the most sophisticated design using CSS3, HTMl5, Bootstrap and dozens other tools.
       .col-lg-2.col-md-3.text-center
         .service-box
           %i.fa.fa-4x.fa-cogs.text-primary.sr-icons
           %h3 API master
-          %p.text-muted Integrated more then 20 and created more than 3, including social network, payments, mapping etc.       
+          %p.text-muted Integrated more than 50 and created more than 5, including social network, payments, mapping etc.       
       .col-lg-2.col-md-3.text-center
         .service-box
           %i.fa.fa-4x.fa-user-secret.text-primary.sr-icons
           %h3 Security in mind
           %p.text-muted I can secure your server and app, prevent hacking, block DDOS
         
-%section#portfolio.no-padding
+%section#examples.no-padding
   .container
     .row
       .col-lg-12.text-center
@@ -65,13 +65,41 @@
     .row.no-gutter
       .col-lg-6.col-sm-6
         %a.portfolio-box{:href => "/chats"}
-          = image_tag("portfolio/thumbnails/1.jpg")
+          = image_tag("work/thumbnails/1.jpg")
           .portfolio-box-caption
             .portfolio-box-caption-content
               .project-category.text-faded
                 Rails + Angular
               .project-name
                 Chat app
+      .col-lg-6.col-sm-6
+        %a.portfolio-box{:href => "javascript:void(0)"}
+          =image_tag "work_in_progress.png"
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                Work in progress
+              .project-name
+                Will be here soon
+
+%section#portfolio
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading Portfolio
+        %hr.primary/
+        %br
+  .container-fluid
+    .row.no-gutter
+      .col-lg-6.col-sm-6
+        = link_to jualo_path, class: "portfolio-box" do
+          = image_tag("portfolio/thumbnails/1.jpg")
+          .portfolio-box-caption
+            .portfolio-box-caption-content
+              .project-category.text-faded
+                www.jualo.com
+              .project-name
+                Market place, eBay for indonesian market 
       .col-lg-6.col-sm-6
         %a.portfolio-box{:href => "javascript:void(0)"}
           =image_tag "work_in_progress.png"
