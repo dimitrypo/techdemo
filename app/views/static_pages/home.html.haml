@@ -101,14 +101,14 @@
               .project-name
                 Market place, eBay for indonesian market 
       .col-lg-6.col-sm-6
-        %a.portfolio-box{:href => "javascript:void(0)"}
-          =image_tag "work_in_progress.png"
+        = link_to testly_path, class: "portfolio-box" do
+          = image_tag("portfolio/thumbnails/2.jpg")
           .portfolio-box-caption
             .portfolio-box-caption-content
               .project-category.text-faded
-                Work in progress
+                www.testly.com
               .project-name
-                Will be here soon
+                Automatic A/B testing software
 
       
 -# will be done later

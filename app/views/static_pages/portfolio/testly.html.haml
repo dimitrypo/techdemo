@@ -1,0 +1,102 @@
+%header.short-header
+  .header-content
+    .header-content-inner
+      %h1#homeHeading www.testly.com
+      %hr/
+      %p 
+        Automatic A / B Split Testing Software, very powerful yet super simple, with pixel perfect, highly complicated responsive design and dynamic pages done on React.JS with backend on Ruby On Rails. Scripts that users install on pages done in pure JS without any libraries, with safeguards and with Ajax implementation.
+      %a.btn.btn-primary.btn-xl.page-scroll{:href => "https://www.testly.com", target: "_blank"} Check it out
+%section.jualo
+  .container
+    .row
+      .col-lg-12
+        %h2.section-heading Technologies used          
+        %p
+          Here are major technologies that I've used while making this project:
+          %ul
+            %li
+              Ruby On Rails 5.1
+            %li
+              HTML5, CSS3, Responsive, Twitter Boostrsap based
+            %li
+              Pixel Perfect design
+            %li
+              Customily patched version of ChartJS to build graphs              
+            %li
+              ReactJS
+            %li
+              Posttgresql database
+            %li
+              Pure JavaScript and Ajax with no libraries 
+            %li
+              Cloud hosting
+            %li
+              Docker, docker-compose 
+            %li
+              Facebook and Google API integration
+            %li
+              IP Geo location
+            %li
+              Rspec and Capybara for tests     
+            %li
+              Custom Bash scripts for backup, auto-recovery, and auto-service jobs
+            %li
+              Advanced and unique caching mechanisms which helps to avoid bottlenecks
+    .row.padding-top
+      .col-lg-12
+        %h2.section-heading Main challenges
+        %ul
+          %li
+            Combine power with simplicity - lots of options that should be easy to configure, extensive usage of wizards, sub-dialogs, helpers etc. All combine with startup like flexibility where workflow get implemented, tested and discarded/changed in days.
+          %li
+            Super fast loading speed for critical components that run actual tests - 0.1s or less
+          %li 
+            Very specific graph requirments that wasn't supported by any popular graph JS software. Solution - to get most popular - chart.js and patch it to make it work as desired
+          %li
+            Complicated DB architecture where hundreds of thousands records should be save yet they should be grouped, read and compared wihtin 0.01s
+          %li
+            Using of pure JS as user side scripts (that users install on their website). Those scripts uses AJAX and multiple safeguards to not interfere with website or possibly cause any adverse effects like redirect loop etc.
+          %li
+            Complicated design, done by very demanding professionals, constant design and workflow changes            
+
+    .row
+      .col-lg-12
+        %h2 Screenshots: 
+        %section
+          .container-fluid
+            .row
+              .col-lg-6.col-sm-6
+                .portfolio-box
+                  = image_tag("portfolio/thumbnails/testly/1.jpg")
+                  .portfolio-box-caption
+                    .portfolio-box-caption-content
+                      .project-category.text-faded
+                        Patched Chart.JS and complex design
+                      .project-name
+                        
+              .col-lg-6.col-sm-6
+                .portfolio-box
+                  = image_tag("portfolio/thumbnails/testly/2.jpg")
+                  .portfolio-box-caption
+                    .portfolio-box-caption-content
+                      .project-category.text-faded
+                        Powerful yet simple                        
+            .row.padding-top             
+              .col-lg-6.col-sm-6
+                .portfolio-box
+                  = image_tag("portfolio/thumbnails/testly/3.jpg")
+                  .portfolio-box-caption
+                    .portfolio-box-caption-content
+                      .project-category.text-faded
+                        Complex custom built billing solution
+              .col-lg-6.col-sm-6
+                .portfolio-box
+                  = image_tag("portfolio/thumbnails/testly/4.jpg")
+                  .portfolio-box-caption
+                    .portfolio-box-caption-content
+                      .project-category.text-faded
+                        Dialogs in dialogs to make workflow easier
+%aside.bg-dark
+  .container.text-center
+    .call-to-action
+      %a.btn.btn-default.btn-xl.sr-button{:href => "/"} Go back to Home page

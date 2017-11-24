@@ -9,4 +9,8 @@ class StaticPagesController < ActionController::Base
     render "static_pages/portfolio/jualo"
   end
 
+  def testly
+    render "static_pages/portfolio/testly"
+  end  
+
 end
