@@ -9,6 +9,9 @@ gem "bower-rails", "~> 0.10.0"
 
 gem 'webpacker', '~> 3.0'
 
+gem 'devise'
+
+gem 'activeadmin'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
