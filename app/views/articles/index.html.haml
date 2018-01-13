@@ -1,0 +1,27 @@
+%header.content-header
+  .header-content
+    .header-content-inner
+      %h1 Articles
+%section#content
+  .container
+    .row
+      .col-lg-12
+        %h1 Listing articles
+
+        %table
+          %thead
+            %tr
+              %th Title
+              %th Header
+              %th Content
+              %th
+              %th
+              %th
+
+          %tbody
+            - @articles.each do |article|
+              %tr
+                %td= article.title
+                %td= article.header
+                %td= article.content
+                %td= link_to 'Show', article

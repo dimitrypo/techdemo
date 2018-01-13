@@ -55,6 +55,11 @@ p {
 section {
   padding: 100px 0;
 }
+
+section#content {
+    padding: 15px 0;
+}
+
 aside {
   padding: 50px 0;
 }
@@ -149,6 +154,13 @@ aside {
 header.short-header {
   min-height: 451px;
   background-image: image-url('header_small.jpg');
+}
+
+header.content-header{
+  min-height: 125px;
+  .header-content{
+    top: 69%;
+  }
 }
 
 header {
