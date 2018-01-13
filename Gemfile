@@ -2,10 +2,12 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0'
+gem 'rails', '~> 5.1.4'
 
 #Use bower to manage JS/CSS dependencies
 gem "bower-rails", "~> 0.10.0"
+
+gem 'webpacker', '~> 3.0'
 
 
 # Use Puma as the app server
