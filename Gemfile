@@ -9,6 +9,8 @@ gem "bower-rails", "~> 0.10.0"
 
 gem 'webpacker', '~> 3.0'
 
+gem "paperclip", "~> 5.0.0"
+
 gem 'devise'
 
 gem 'activeadmin'
