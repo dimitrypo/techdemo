@@ -12,4 +12,28 @@ ActiveAdmin.register Article do
 #   permitted
 # end
 
+  index do
+    column :title
+    column :header
+    column :content
+    column :created_at
+    column :updated_at
+    column :image do |article|
+      image_tag article.image.url, style: 'width: 80px; height: 80px'
+    end
+  end
+
+  form do |f|
+    f.inputs "Upload" do
+      f.input :title
+      f.input :header
+      f.input :content
+      f.input :created_at
+      f.input :updated_at 
+      f.input :image, required: true, as: :file
+    end
+    f.actions
+
+    
+  end
 end
